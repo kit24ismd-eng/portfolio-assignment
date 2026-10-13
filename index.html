@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio and appointment booking demo">
+  <title>Alex Morgan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">AM<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#booking">Book a meeting</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTFOLIO · WEB DEVELOPMENT</p>
+        <h1>Thoughtful digital experiences, built with purpose.</h1>
+        <p class="lead">Hi, I'm Alex — a developer who enjoys turning ideas into clean, useful websites and applications.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work</a><a class="button secondary" href="#booking">Book an appointment</a></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract illustration"><div class="orb"></div><div class="art-card"><span>DESIGN</span><strong>Ideas → Impact</strong><small>Plan · Build · Improve</small></div><div class="art-tag">Available for projects ↗</div></div>
+    </section>
+    <section class="section about" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br>Practical by design.</h2>
+      <p class="section-copy">I create responsive interfaces and straightforward digital tools. My focus is on accessibility, clear communication, and maintainable code. Replace this sample text with your own story, skills, education, and goals.</p>
+      <div class="skills"><span>HTML & CSS</span><span>Python</span><span>Database Design</span><span>UI/UX</span></div>
+    </section>
+    <section class="section projects" id="work">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2></div><p>Example cards — replace them with your real projects.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-number">01</div><h3>Appointment Booking</h3><p>A simple booking workflow with validation and Supabase storage.</p><span>Python · Supabase</span></article>
+        <article class="project-card"><div class="project-number">02</div><h3>Student Dashboard</h3><p>A clear dashboard concept for organising student information.</p><span>HTML · CSS</span></article>
+        <article class="project-card"><div class="project-number">03</div><h3>Personal Portfolio</h3><p>A responsive, lightweight portfolio built for the web.</p><span>Responsive Design</span></article>
+      </div>
+    </section>
+    <section class="section booking" id="booking">
+      <div class="booking-intro"><p class="eyebrow">LET'S CONNECT</p><h2>Make time for a good conversation.</h2><p>Use the form to request a meeting. Your booking is sent to the Python API and saved in Supabase once you configure the project.</p><div class="booking-note">Typical response time <strong>1–2 business days</strong></div></div>
+      <form id="booking-form" class="booking-form">
+        <h3>Request an appointment</h3>
+        <label for="name">Full name</label><input id="name" name="name" required maxlength="100" placeholder="Your name">
+        <label for="email">Email address</label><input id="email" name="email" type="email" required maxlength="254" placeholder="you@example.com">
+        <label for="role">I am a</label><select id="role" name="role" required><option value="Customer">Customer / Client</option><option value="Provider">Service Provider</option></select>
+        <div class="form-row"><div><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div><div><label for="time">Preferred time</label><input id="time" name="time" type="time" required></div></div>
+        <label for="service">Appointment type</label><select id="service" name="service" required><option value="Introductory call">Introductory call</option><option value="Project consultation">Project consultation</option><option value="Portfolio review">Portfolio review</option></select>
+        <label for="message">Anything I should know? (optional)</label><textarea id="message" name="message" rows="3" maxlength="1000" placeholder="Tell me briefly about your request"></textarea>
+        <button class="button primary submit" type="submit">Request booking ↗</button><p id="form-status" class="form-status" role="status"></p>
+        <p class="privacy">Demo project: do not enter sensitive personal information.</p>
+      </form>
+    </section>
+    <section class="section contact" id="contact"><p class="eyebrow">SAY HELLO</p><h2>Have an idea in mind?</h2><p>Replace the sample details with your real contact information.</p><a href="mailto:hello@example.com">hello@example.com ↗</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> Alex Morgan</span><span>Designed with care · Built for the web</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
